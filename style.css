@@ -24,7 +24,7 @@
   --button-color-hover: rgba(255, 255, 255, 0.07);
   --buton-border-hover: rgba(255, 255, 255, 0.7);
   --toggle-icon: url("./assets/moon-stars.svg");
-  --toggle-icon-right: 50%;
+  --toggle-icon-right: calc(100% - 32px);
 }
 
 .light {
@@ -36,7 +36,7 @@
   --button-color-hover: rgba(0, 0, 0, 0.07);
   --buton-border-hover: rgba(0, 0, 0, 0.7);
   --toggle-icon: url("./assets/sun.svg");
-  --toggle-icon-right: 0;
+  --toggle-icon-right: calc(100% - 32px);
 }
 
 body {
@@ -88,6 +88,11 @@ body * {
   right: var(--toggle-icon-right);
   z-index: 1;
   transform: translateY(-50%);
+  transition: right 0.5s ease;
+}
+
+.theme-toggle.active .toggle-icon {
+  right: 0;
 }
 
 #toggle-track {
