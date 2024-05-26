@@ -19,7 +19,7 @@
   --text-color: #fff;
   --text-color-inverse: #000;
   --bg-url: url("./assets/bg-desktop.jpg");
-  --button-color: rgba(255, 255, 255, 0.1);
+  --button-color: rgba(255, 255, 255, 0.15);
   --button-border: rgba(255, 255, 255, 0.5);
   --button-color-hover: rgba(255, 255, 255, 0.07);
   --buton-border-hover: rgba(255, 255, 255, 0.7);
@@ -31,7 +31,7 @@
   --text-color: #000;
   --text-color-inverse: #fff;
   --bg-url: url("./assets/bg-desktop-light.jpg");
-  --button-color: rgba(0, 0, 0, 0.1);
+  --button-color: rgba(0, 0, 0, 0.15);
   --button-border: rgba(0, 0, 0, 0.5);
   --button-color-hover: rgba(0, 0, 0, 0.07);
   --buton-border-hover: rgba(0, 0, 0, 0.7);
@@ -89,6 +89,10 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
   transition: right 0.5s ease;
+}
+
+.toggle-icon:hover {
+  outline: 8px solid var(--button-color-hover);
 }
 
 .theme-toggle.active .toggle-icon {
